@@ -1,9 +1,64 @@
-<html>
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>내 이름 - Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
 
-  <body>
+    <div class="container">
+        <aside class="sidebar">
+            <div class="profile-img">
+                <img src="image.jpg" alt="프로필 사진">
+            </div>
+            
+            <div class="contact-info">
+                <p><i class="fas fa-envelope"></i> <a href="mailto:email@example.com">email@example.com</a></p>
+                
+                <p><i class="fab fa-linkedin"></i> <a href="https://linkedin.com/in/본인아이디" target="_blank">LinkedIn</a></p>
+                
+                <p><i class="fas fa-file-alt"></i> <a href="CV.pdf" target="_blank">Download CV</a></p>
+            </div>
+        </aside>
 
-    <h1>근석 포트폴리오 생성</h1>
+        <main class="content">
+            <header>
+                <h1>홍길동 (Gildong Hong)</h1>
+                <p class="subtitle">UX Designer / Front-end Developer</p>
+            </header>
 
-  </body>
+            <section class="intro">
+                <p>
+                    안녕하세요! 저는 현재 OO대학교에서 공부 중인 홍길동입니다.<br>
+                    사용자 경험을 중심으로 한 웹 디자인과 개발에 관심이 많습니다.
+                    주로 React와 Figma를 사용하여 작업합니다.
+                </p>
+            </section>
 
+            <section class="news">
+                <h2>News</h2>
+                <ul>
+                    <li><span class="date">2024.02</span> - OO 공모전에서 최우수상 수상</li>
+                    <li><span class="date">2023.12</span> - OO 회사 인턴십 수료</li>
+                </ul>
+            </section>
+
+            <section class="publications">
+                <h2>Projects & Publications</h2>
+                <div class="project-item">
+                    <h3>프로젝트 제목 A</h3>
+                    <p>이 프로젝트는 어떠한 문제를 해결하기 위해 진행되었습니다. <a href="#">[PDF]</a> <a href="#">[Code]</a></p>
+                </div>
+                <div class="project-item">
+                    <h3>프로젝트 제목 B</h3>
+                    <p>사용자 리서치를 기반으로 한 앱 디자인 프로젝트입니다.</p>
+                </div>
+            </section>
+        </main>
+    </div>
+
+</body>
 </html>
