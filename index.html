@@ -3,60 +3,90 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Geunseok Park - Portfolio</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <title>Jini Kim - Portfolio</title>
+    <link rel="stylesheet" href="style.css"> <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
 
     <div class="container">
+        
         <aside class="sidebar">
-            <div class="profile-img">
-                <img src="image.jpg" alt="프로필 사진">
-            </div>
-            
-            <div class="contact-info">
-                <p><i class="fas fa-envelope"></i> <a href="mailto:email@example.com">email@example.com</a></p>
-                
-                <p><i class="fab fa-linkedin"></i> <a href="https://linkedin.com/in/본인아이디" target="_blank">LinkedIn</a></p>
-                
-                <p><i class="fas fa-file-alt"></i> <a href="CV.pdf" target="_blank">Download CV</a></p>
-            </div>
+            <img src="image_736861.png" alt="Profile" class="profile-img">
+            <ul class="contact-list">
+                <li><i class="fa-regular fa-envelope"></i> <a href="mailto:jinik@andrew.cmu.edu">jinik@andrew.cmu.edu</a></li>
+                <li><i class="fa-brands fa-linkedin"></i> <a href="#" target="_blank">LinkedIn</a></li>
+                <li><i class="fa-brands fa-google-scholar"></i> <a href="#" target="_blank">Google Scholar</a></li>
+                <li><i class="fa-regular fa-file-lines"></i> <a href="CV.pdf" target="_blank">CV (Download)</a></li>
+            </ul>
         </aside>
 
-        <main class="content">
+        <main class="main-content">
+            
+            <nav class="top-nav">
+                <a href="index.html" class="active">Home</a>
+                <a href="#projects">Projects</a>
+                <a href="#articles">Articles</a>
+            </nav>
+
             <header>
-                <h1>홍길동 (Gildong Hong)</h1>
-                <p class="subtitle">UX Designer / Front-end Developer</p>
+                <h1>Jini Kim</h1>
+                <div class="intro">
+                    <p>
+                        안녕하세요! CMU HCI Institute 박사 과정 김지니입니다.<br>
+                        생성형 AI와 사용자 간의 상호작용을 연구하며, 더 나은 사용자 경험을 설계합니다.
+                    </p>
+                </div>
             </header>
 
-            <section class="intro">
-                <p>
-                    안녕하세요! 저는 현재 OO대학교에서 공부 중인 홍길동입니다.<br>
-                    사용자 경험을 중심으로 한 웹 디자인과 개발에 관심이 많습니다.
-                    주로 React와 Figma를 사용하여 작업합니다.
-                </p>
-            </section>
+            <section id="projects">
+                <h2>Projects</h2>
+                <div class="project-grid">
+                    
+                    <a href="project-detail.html" class="project-card">
+                        <img src="project1_thumb.jpg" alt="Project 1" class="project-thumb">
+                        <div class="project-title">Generative AI Tool</div>
+                        <div class="project-desc">UX Research, Prototyping</div>
+                    </a>
 
-            <section class="news">
-                <h2>News</h2>
-                <ul>
-                    <li><span class="date">2024.02</span> - OO 공모전에서 최우수상 수상</li>
-                    <li><span class="date">2023.12</span> - OO 회사 인턴십 수료</li>
-                </ul>
-            </section>
+                    <a href="project-detail.html" class="project-card">
+                        <img src="project2_thumb.jpg" alt="Project 2" class="project-thumb">
+                        <div class="project-title">Mental Health App</div>
+                        <div class="project-desc">App Design, User Study</div>
+                    </a>
 
-            <section class="publications">
-                <h2>Projects & Publications</h2>
-                <div class="project-item">
-                    <h3>프로젝트 제목 A</h3>
-                    <p>이 프로젝트는 어떠한 문제를 해결하기 위해 진행되었습니다. <a href="#">[PDF]</a> <a href="#">[Code]</a></p>
-                </div>
-                <div class="project-item">
-                    <h3>프로젝트 제목 B</h3>
-                    <p>사용자 리서치를 기반으로 한 앱 디자인 프로젝트입니다.</p>
+                    <a href="project-detail.html" class="project-card">
+                        <img src="project3_thumb.jpg" alt="Project 3" class="project-thumb">
+                        <div class="project-title">Community Platform</div>
+                        <div class="project-desc">Web Development</div>
+                    </a>
+
                 </div>
             </section>
+
+            <section id="articles">
+                <h2>Articles</h2>
+                
+                <div class="article-item">
+                    <a href="https://scholar.google.com/..." target="_blank" class="article-title">
+                        Content Creation with Generative AI: How Do Creators Use It?
+                    </a>
+                    <div class="article-meta">
+                        <strong>Jini Kim</strong>, Manqing Yu, Jodi Forlizzi • CSCW 2026
+                    </div>
+                </div>
+
+                <div class="article-item">
+                    <a href="#" target="_blank" class="article-title">
+                        Making the Right Thing: Bridging HCI and Responsible AI
+                    </a>
+                    <div class="article-meta">
+                        Ji-Youn Jung, <strong>Jini Kim</strong>, John Zimmerman • DIS 2025
+                    </div>
+                </div>
+
+            </section>
+
         </main>
     </div>
 
